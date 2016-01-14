@@ -1,0 +1,21 @@
+diff -Naur Params-Validate-1.08.orig/t/release-pod-spell.t Params-Validate-1.08/t/release-pod-spell.t
+--- Params-Validate-1.08.orig/t/release-pod-spell.t	2013-06-07 21:34:33.000000000 +0200
++++ Params-Validate-1.08/t/release-pod-spell.t	2013-06-11 14:35:21.718579174 +0200
+@@ -29,8 +29,9 @@
+ # https://bugs.launchpad.net/ubuntu/+source/aspell/+bug/71322
+ local $ENV{LC_ALL} = 'C';
+ all_pod_files_spelling_ok();
+-
+ __DATA__
++'
++''
+ API
+ CPAN
+ GLOBREF
+@@ -42,5 +43,6 @@
+ ValidatePos
+ baz
+ onwards
++'globals'
+ pre
+ runtime
